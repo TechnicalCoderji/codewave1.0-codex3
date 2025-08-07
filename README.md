@@ -40,18 +40,6 @@ Support teams receive hundreds of customer-care calls daily. Manually reviewing 
 
 ---
 
-## 📂 Repository Structure
-
-```
-/
-├── index.html           # Single-page frontend
-├── store.php            # PHP API: saves transcript + summary
-├── get_records.php      # PHP API: returns all saved records as JSON
-└── README.md            # Project documentation
-```
-
----
-
 ## ⚙️ Setup & Run Locally
 
 ### 1. Clone the Repository
