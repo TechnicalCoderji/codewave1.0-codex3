@@ -12,12 +12,12 @@
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo"><img src="Images/callsense-logo.png" alt="CallSense Logo"></div>
-  <ul id="nav-links">
+  <ul id="nav-links" >
     <li class="nav-links"><a href="#">Dashboard</a></li>
     <li class="nav-links"><a href="about.php">About Us</a></li>
     <li class="nav-links"><a href="logout.php">Logout</a></li>
-    <img src="Images/hamburger.png" alt="Hamburger" class="hamburger-img">
-   </ul>
+  </ul>
+  <img src="Images/hamburger.png" alt="Hamburger" id="hamburger" class="hamburger-img">
 </nav>
 
 <!-- DASHBOARD -->
@@ -41,8 +41,10 @@
     <div id="overallIssues" class="box">No issues aggregated yet.</div>
     
     <h2>📚 History</h2>
-    <div id="history"></div>
-    <div id="overallIssues" class="box">No history yet!</div>
+    <div id="history">
+      <div id="overallIssues" class="box">No history yet!</div>
+    </div>
+    
   </div>
 
 </main>
@@ -53,6 +55,7 @@
 </footer>
 
 <script src="dashboard.js"></script>
+<script src="standard.js"></script>
 
 </body>
 </html>

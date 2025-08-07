@@ -138,9 +138,42 @@ th {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  
+  #nav-links {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 84px;
+    right: 0px;
+    height: 100vh;
+    width: 60%;
+    font-size: 25px !important;
+    background-color: #f0f0f0;
+    padding: 25px;
+    transition: all .5s ease;
+    margin-right: -60%;
   }
+  
+  .active{
+    margin-right: 0 !important;
+  }
+
+  .nav-links{
+    background-color: #007bff;
+    color: white !important;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    color: white !important;
+  } 
 
   .hamburger-img {
     display: block;

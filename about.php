@@ -19,8 +19,8 @@
     <li class="nav-links"><a href="dashboard.php">Dashboard</a></li>
     <li class="nav-links"><a href="#">About Us</a></li>
     <li class="nav-links"><a href="logout.php">Logout</a></li>
-    <img src="Images/hamburger.png" alt="Hamburger" class="hamburger-img">
-   </ul>
+  </ul>
+  <img src="Images/hamburger.png" alt="Hamburger" id="hamburger" class="hamburger-img">
 </nav>
 
   <div class="header">
@@ -51,6 +51,8 @@
       </li>
     </ul>
   </div>
+
+  <script src="standard.js"></script>
 
 </body>
 </html>
