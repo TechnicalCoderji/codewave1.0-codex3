@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+.welcome-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.welcome-heading {
+  color: white; 
+  font-size: 40px;
+}
+
+.welcome-subtext {
+  color: white;
+  font-size: 25px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.login-box{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    z-index: 10;
+}
+
+.logo img {
+    width: 270px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: rgb(114, 110, 110);
+}
+
+label {
+    display: block;
+    color: rgb(114, 110, 110);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid #ccc;
+    transition: all .3s ease;
+    font-size: 14px;
+}
+
+input:focus{
+    border-color: rgb(0, 140, 255);
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  color: #0066cc;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.captcha-image {
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: auto;
+  /* padding: 0 15px; */
+}
+
+.captcha-refresh-btn {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 8px 10px;
+  height: 45px;
+  width: 45px;
+  color:#007bff;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.captcha-refresh-btn i{
+    font-size: 18px;
+}
+
+.captcha-refresh-btn:hover {
+  background-color: #e0e0e0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.rotate-once {
+  animation: rotate 0.3s ease-in-out;
+}
+
+.forgot-password {
+    text-align: right;
+    margin: 15px 0;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+p {
+    margin-top: 10px;
+    color: rgba(114, 110, 110);
+
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+/* for the submit message start */
+
+/* Blur and disable background when modal is active */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    backdrop-filter: blur(5px); /* Optional blur effect */
+    display: none;
+    z-index: 1;
+}
+
+/* Modal box */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.modal img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.modal .fs
+{
+    color: #006aff !important;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.modal p
+{
+    font-size: 18px;
+}
+
+.modal button
+{
+    padding: 10px 20px;
+    background: rgb(0, 106, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.modal a
+{
+    padding: 10px 20px;
+    background: rgb(0, 106, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* Disable interaction with background */
+.no-click {
+    pointer-events: none;
+}
+
+/* for the submit message end */
+
+
+/* loading animation css */
+
+.loading-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.111);
+    /* background-color: white; */
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: -1;
+}
+
+.loading-wrapper .loading{
+    width: 50px;
+    height: 50px;
+    /* border: 5px solid #f3f3f3; */
+    border-top: 5px solid #0099ff;
+    border-radius: 50%;
+    animation: spin .5s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+  

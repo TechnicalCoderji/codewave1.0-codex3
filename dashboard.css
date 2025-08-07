@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #308DFF, #00FFE0);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 60px;
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+#nav-links li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+
+#nav-links li a:hover {
+  color: #0056b3;
+}
+
+.hamburger-img {
+  height: 30px;
+  display: none;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+input,
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.box {
+  background: #f0f0f0;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+  white-space: pre-wrap;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+}
+
+#status {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #007bff;
+  color: #fff;
+}
+
+#overallIssues {
+  margin-top: 20px;
+}
+
+#overallIssues ul {
+  list-style: disc inside;
+}
+
+.footer{
+  background: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  border-top: 1px solid #ddd;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-img {
+    display: block;
+  }
+
+  .upload-container,
+  .ai-box {
+    width: 90%;
+  }
+}
